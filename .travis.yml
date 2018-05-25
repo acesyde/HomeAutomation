@@ -1,0 +1,7 @@
+language: csharp
+solution: build.sln
+dotnet: 2.1.2
+script:
+  - dotnet restore
+  - dotnet build --no-restore
+  - dotnet test --no-restore --no-build HomeAutomation.Tests/HomeAutomation.Tests.csproj
